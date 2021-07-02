@@ -45,6 +45,10 @@ function count_e(word) {
 }
 console.log(count_e("Kgwete"));
 
+function count_i(word1) {
+    return word1.split("i").length-1;
+}
+console.log(count_i("Rorisang is a girl."));
 
  /*let count = "Detect-phone";
  let newCount = (count.match(/e/g) || []).length;
