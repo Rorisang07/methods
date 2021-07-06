@@ -52,5 +52,52 @@ console.log(count_i("Rorisang is a girl."));
 
  /*let count = "Detect-phone";
  let newCount = (count.match(/e/g) || []).length;
- console.log(newCount);*/
+ console.log(newCount);*/ 
  //g  is for global (it searches globally)
+
+ // HOMEWORK TWO
+
+ function  count_a(word) {
+     return (word.match(/A/gi) || []).length;
+ } console.log( count_a("Adidaas"));
+ // i is for caseinsensetive
+
+ function count_f(word){
+     return (word.match(/(F|f)/g) || []).length
+ }console.log(count_f("Fastff food"))
+
+
+function  count_vowels(word) {
+     let count = 0;
+     let vowels = "aeiou";
+     for( i =0 ; i< word.length ; i++) {
+        if (vowels.indexOf(word[i]) > -1) {
+            count ++;
+        }
+     }
+     return "This string has " + count + " vowels in total.";
+ } console.log( count_vowels("Recognised"));
+
+ function sum_nums(max) {
+     let sum = 0;
+     for (let  i =1 ; i<= max; i++) {
+         sum += i;
+     } return sum;
+ } console.log( sum_nums(10));
+
+ function factorial(num) {
+     let product= 1;
+     for (let i =1; i<= num; i++){
+         product *= i;
+     }return product;
+ }console.log( factorial(7));
+
+ function reverse(word) {
+      return word.split("").reverse().join("");
+ } console.log( reverse("Rorisang"));
+
+ function goodbye(name) {
+     
+     return  "Goodbye " + name;
+ } 
+ console.log( goodbye("Hanie Webster."));
